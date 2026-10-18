@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GiftGuide AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="gift-icon">🎁</div>
+        <h1>GiftGuide AI</h1>
+        <p>Find a thoughtful gift for someone special.</p>
+    </header>
+
+
+    <main class="container">
+
+        <section class="card">
+
+            <h2>✨ Tell us about the person</h2>
+
+            <label for="recipient">Who is the gift for?</label>
+            <input
+                type="text"
+                id="recipient"
+                placeholder="Example: My best friend"
+            >
+
+            <label for="occasion">What is the occasion?</label>
+            <input
+                type="text"
+                id="occasion"
+                placeholder="Example: Birthday"
+            >
+
+            <label for="interests">What are their interests?</label>
+            <input
+                type="text"
+                id="interests"
+                placeholder="Example: Books, coffee, art"
+            >
+
+            <label for="budget">Your budget (₹)</label>
+            <input
+                type="number"
+                id="budget"
+                placeholder="Example: 1500"
+            >
+
+            <label for="relationship">Your relationship</label>
+            <input
+                type="text"
+                id="relationship"
+                placeholder="Example: Best friend"
+            >
+
+            <button id="generateBtn">
+                🎁 Find Gift Ideas
+            </button>
+
+        </section>
+
+
+        <section id="result" class="result-card">
+
+            <h2>💝 Your GiftGuide</h2>
+
+            <div id="giftResults">
+                <p>
+                    Enter the details above and let AI find thoughtful
+                    gift ideas for you.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Made with 💝 and AI</p>
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

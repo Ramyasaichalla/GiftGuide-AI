@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff7f2;
+    color: #4a3f3a;
+}
+
+.hero {
+    text-align: center;
+    padding: 45px 20px 35px;
+    background: #f9dfd0;
+}
+
+.gift-icon {
+    font-size: 55px;
+}
+
+.hero h1 {
+    margin: 10px 0;
+    font-size: 38px;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 35px auto;
+}
+
+.card,
+.result-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(80, 60, 50, 0.08);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #e2d5ce;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #d99b7d;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #d98f70;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c77d61;
+}
+
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.result-card {
+    min-height: 180px;
+}
+
+#giftResults {
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #806f66;
+}
